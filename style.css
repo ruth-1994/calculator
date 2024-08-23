@@ -1,0 +1,109 @@
+/* Reset margin and box-sizing for all elements */
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    background-color: hsl(0, 0%, 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height centering */
+  }
+  
+  /* Style the container box */
+  #container-box {
+    background-color: hsl(0, 1%, 79%);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), 
+                10px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the button wrapper */
+  .btn-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    height: 360px;
+    margin: 5px;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style buttons */
+  .btn {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style display area */
+  #display {
+    width: 380px;
+    height: 100px;
+    border: none;
+    padding: 10px;
+    background-color: hsl(0, 5%, 83%);
+    color: black;
+    font-size: 18px;
+    text-align: right;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  /* Specific button colors */
+  #equal {
+    background-color: #ff007f;
+    color: white;
+  }
+  
+  #divide, 
+  #multiply, 
+  #addition, 
+  #subtract {
+    background-color: hsl(0, 0%, 59%);
+  }
+  
+  #percentage, 
+  #clear, 
+  #negative {
+    background-color: hsl(0, 0%, 70%);
+  }
+  
+  /* Hover and active states for buttons */
+  .btn:hover {
+    background-color: hsl(0, 0%, 55%);
+  }
+  
+  .btn:active, 
+  #percentage:active, 
+  #clear:active, 
+  #negative:active, 
+  #divide:active, 
+  #multiply:active, 
+  #addition:active, 
+  #subtract:active {
+    background-color: hsl(0, 0%, 80%);
+  }
+  
